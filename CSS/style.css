@@ -1,3 +1,8 @@
+body {
+    font-family: cursive;
+    background-color: gainsboro;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -14,8 +19,7 @@
 }
 
 nav {
-    display: flex
-;
+    display: flex;
     align-items: center;
 }
 
@@ -38,5 +42,44 @@ main>section {
 }
 
 .section-content {
+    text-align: center;
+}
+
+.portofolio {
+    flex-direction: row;
+    align-items: stretch;
+    padding:50px 20px;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+.portofolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.portofolio-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.portofolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portofolio-card img{
+    width:100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+footer {
     text-align: center;
 }
