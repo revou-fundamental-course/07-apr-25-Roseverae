@@ -1,3 +1,9 @@
+:root {
+    --mainColor: #1a237e;
+    --mainColorLight: #303f9f;
+}
+
+
 body {
     font-family: cursive;
     background-color: gainsboro;
@@ -5,14 +11,14 @@ body {
 
 .main-header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between
 }
 
 
 .main-logo {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url('../assets/logo.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -21,18 +27,21 @@ body {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 75px;
+
 }
 
 nav > a {
     text-decoration: none;
     color: black;
     border: 1px solid;
-    padding: 8px;
+    padding: 0 40px;
+    box-shadow: 0px 1px 7px rgba(0,0,0,0.1);
 }
 
 .banner-img {
     height: 400px;
-    background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: top;
 }
@@ -43,6 +52,54 @@ main>section {
 
 .section-content {
     text-align: center;
+}
+
+.our-profile {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.our-profile h2 {
+    font-size: 2rem;
+    color: #d12026;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #f4f4f4;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 350px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
 }
 
 .portofolio {
@@ -83,3 +140,144 @@ main>section {
 footer {
     text-align: center;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.img-slideshow {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+img {
+    width: 80%;
+}
+
+.about-us-section {
+    background-color: #fff8f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content{
+    text-align:center;
+    line-height: 1.6;
+    max-width:400px;
+    margin: auto;
+}
+
+.about-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d12026a9;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.vision-mission-section {
+    background-color: #fff7e6;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+}
+
+.vision-mission h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.vm-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1000px;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+.vm-box {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 1 10px rgba(0,0,0,0.1);
+}
+
+.vm-box h3 {
+color: #d35400;
+margin-bottom:10px;
+}
+
+.vm-box ul {
+    padding-left: 20px;
+}
+
+.vm-box li {
+    margin-bottom: 8px;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  form {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .gender-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ed8876;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .output-box {
+    flex: 1;
+    min-width: 300px;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+@media only screen and (max-width: 600px) {
+    .main-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
